@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/paper/paper",
+    "pages/home/home"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "糗事百科",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#adadad",
+    "selectedColor": "#fee42b",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-s.png",
+        "text": "糗事"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "static/tabbar/new.png",
+        "selectedIconPath": "static/tabbar/new-s.png",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/paper/paper",
+        "iconPath": "static/tabbar/xzt.png",
+        "selectedIconPath": "static/tabbar/xzt-s.png",
+        "text": "小纸条"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my-s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

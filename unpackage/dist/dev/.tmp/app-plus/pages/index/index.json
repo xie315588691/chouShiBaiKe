@@ -1,0 +1,32 @@
+{
+  "scrollIndicator": "none",
+  "titleNView": {
+    "searchInput": {
+      "align": "center",
+      "backgroundColor": "#f7f7f7",
+      "borderRadius": "4px",
+      "placeholder": "搜索糗事",
+      "placeholderColor": "#cccccc",
+      "disabled": true
+    },
+    "buttons": [
+      {
+        "color": "#FFDD48",
+        "float": "left",
+        "colorPressed": "#bbbbbb",
+        "fontSize": "28px",
+        "fontSrc": "/static/font/iconfont.ttf",
+        "text": ""
+      },
+      {
+        "color": "#CCCCCC",
+        "float": "right",
+        "colorPressed": "#bbbbbb",
+        "fontSize": "28px",
+        "fontSrc": "/static/font/iconfont.ttf",
+        "text": ""
+      }
+    ]
+  },
+  "usingComponents": {}
+}
