@@ -13,7 +13,6 @@ export default {
 </script>
 
 <style>
-	@import url("./common/uni.css");
 	@import url("./static/font/iconfont");
 	@import url("./common/animate.css");
 	
