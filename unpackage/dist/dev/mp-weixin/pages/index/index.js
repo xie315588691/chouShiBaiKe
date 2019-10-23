@@ -131,7 +131,56 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexList = function IndexList() {return __webpack_require__.e(/*! import() | common/index/indexList */ "common/index/indexList").then(__webpack_require__.bind(null, /*! ../../common/index/indexList.vue */ 43));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexList = function IndexList() {return __webpack_require__.e(/*! import() | common/index/indexList */ "common/index/indexList").then(__webpack_require__.bind(null, /*! ../../common/index/indexList.vue */ 41));};var swiperTabHead = function swiperTabHead() {return __webpack_require__.e(/*! import() | common/index/swiperTabHead */ "common/index/swiperTabHead").then(__webpack_require__.bind(null, /*! ../../common/index/swiperTabHead.vue */ 48));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | common/common/loadmore */ "common/common/loadmore").then(__webpack_require__.bind(null, /*! ../../common/common/loadmore.vue */ 59));};var nothing = function nothing() {return __webpack_require__.e(/*! import() | common/common/nothing */ "common/common/nothing").then(__webpack_require__.bind(null, /*! ../../common/common/nothing.vue */ 64));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -160,63 +209,14 @@ __webpack_require__.r(__webpack_exports__);
 
 {
   components: {
-    IndexList: IndexList },
+    IndexList: IndexList,
+    swiperTabHead: swiperTabHead,
+    loadMore: loadMore,
+    nothing: nothing },
 
   data: function data() {
     return {
-      list: [
-      {
-        userpic: '../../static/demo/userpic/12.jpg',
-        username: '鲁大师',
-        isguanZhu: false,
-        title: '我是标题',
-        type: 'img', //img:图文，video:视频
-        titlepic: '../../static/demo/datapic/11.jpg',
-        playNum: 200000,
-        longTime: '2:47',
-        infoNum: {
-          dingNum: 11,
-          caiNum: 11,
-          index: 0 //0:代表没有操作1：顶2：踩
-        },
-        commentNum: 20,
-        shareNum: 20 },
-
-      {
-        userpic: '../../static/demo/userpic/12.jpg',
-        username: '鲁大师',
-        isguanZhu: true,
-        title: '我是标题',
-        type: 'img', //img:图文，video:视频
-        titlepic: '../../static/demo/datapic/11.jpg',
-        playNum: 200000,
-        longTime: '2:47',
-        infoNum: {
-          dingNum: 11,
-          caiNum: 11,
-          index: 2 //0:代表没有操作1：顶2：踩
-        },
-        commentNum: 20,
-        shareNum: 20 },
-
-      {
-        userpic: '../../static/demo/userpic/12.jpg',
-        username: '鲁大师',
-        isguanZhu: false,
-        title: '我是标题',
-        type: 'img', //img:图文，video:视频
-        titlepic: '../../static/demo/datapic/11.jpg',
-        playNum: 200000,
-        longTime: '2:47',
-        infoNum: {
-          dingNum: 11,
-          caiNum: 11,
-          index: 1 //0:代表没有操作1：顶2：踩
-        },
-        commentNum: 20,
-        shareNum: 20 }],
-
-
+      swiperHeigh: 500,
       tabBars: [
       {
         name: '关注',
@@ -248,9 +248,65 @@ __webpack_require__.r(__webpack_exports__);
 
 
       tabIndex: 1,
-      swiperHeigh: 500,
       newsList: [
       {
+        loadingMore: '上拉加载更多',
+        list: [
+        {
+          userpic: '../../static/demo/userpic/12.jpg',
+          username: '鲁大师',
+          isguanZhu: false,
+          title: '我是标题',
+          type: 'video', //img:图文，video:视频
+          titlepic: '../../static/demo/datapic/11.jpg',
+          playNum: 200000,
+          longTime: '2:47',
+          infoNum: {
+            dingNum: 11,
+            caiNum: 11,
+            index: 0 //0:代表没有操作1：顶2：踩
+          },
+          commentNum: 20,
+          shareNum: 20 },
+
+        {
+          userpic: '../../static/demo/userpic/12.jpg',
+          username: '鲁大师',
+          isguanZhu: true,
+          title: '我是标题',
+          type: 'img', //img:图文，video:视频
+          titlepic: '../../static/demo/datapic/11.jpg',
+          playNum: 200000,
+          longTime: '2:47',
+          infoNum: {
+            dingNum: 11,
+            caiNum: 11,
+            index: 2 //0:代表没有操作1：顶2：踩
+          },
+          commentNum: 20,
+          shareNum: 20 },
+
+        {
+          userpic: '../../static/demo/userpic/12.jpg',
+          username: '鲁大师',
+          isguanZhu: false,
+          title: '我是标题',
+          type: 'img', //img:图文，video:视频
+          titlepic: '../../static/demo/datapic/11.jpg',
+          playNum: 200000,
+          longTime: '2:47',
+          infoNum: {
+            dingNum: 11,
+            caiNum: 11,
+            index: 1 //0:代表没有操作1：顶2：踩
+          },
+          commentNum: 20,
+          shareNum: 20 }] },
+
+
+
+      {
+        loadingMore: '上拉加载更多',
         list: [
         {
           userpic: '../../static/demo/userpic/12.jpg',
@@ -306,6 +362,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
       {
+        loadingMore: '上拉加载更多',
         list: [
         {
           userpic: '../../static/demo/userpic/12.jpg',
@@ -361,6 +418,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
       {
+        loadingMore: '上拉加载更多',
         list: [
         {
           userpic: '../../static/demo/userpic/12.jpg',
@@ -416,279 +474,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
       {
-        list: [
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 0 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: true,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 2 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 1 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 }] },
-
-
+        loadingMore: '上拉加载更多',
+        list: [] },
 
       {
-        list: [
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 0 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: true,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 2 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 1 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 }] },
-
-
+        loadingMore: '上拉加载更多',
+        list: [] },
 
       {
-        list: [
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 0 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: true,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 2 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 1 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 }] },
-
-
-
-      {
-        list: [
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 0 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: true,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 2 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 1 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 }] },
-
-
-
-      {
-        list: [
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 0 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: true,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 2 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 },
-
-        {
-          userpic: '../../static/demo/userpic/12.jpg',
-          username: '鲁大师',
-          isguanZhu: false,
-          title: '我是标题',
-          type: 'img', //img:图文，video:视频
-          titlepic: '../../static/demo/datapic/11.jpg',
-          playNum: 200000,
-          longTime: '2:47',
-          infoNum: {
-            dingNum: 11,
-            caiNum: 11,
-            index: 1 //0:代表没有操作1：顶2：踩
-          },
-          commentNum: 20,
-          shareNum: 20 }] }] };
-
-
+        loadingMore: '上拉加载更多',
+        list: [] }] };
 
 
 
@@ -697,9 +492,6 @@ __webpack_require__.r(__webpack_exports__);
     this.getSysHeight();
   },
   methods: {
-    changeTabIndex: function changeTabIndex(index) {
-      this.tabIndex = index;
-    },
     getSysHeight: function getSysHeight() {var _this = this;
       uni.getSystemInfo({
         success: function success(res) {
@@ -709,8 +501,90 @@ __webpack_require__.r(__webpack_exports__);
     },
     ontabchange: function ontabchange(e) {
       var index = e.target.current || e.detail.current;
-      // console.log(e)
       this.tabIndex = index;
+    },
+    changeIndex: function changeIndex(val) {
+      this.tabIndex = val;
+    },
+    changeObj: function changeObj(obj) {
+      console.log(obj);
+      // this.newsList[item.index][item][isguanZhu] = true;
+    },
+    //关注
+    changeIsguanZhu: function changeIsguanZhu(item) {
+      if (!item.isguanZhu) {
+        item.isguanZhu = true;
+        uni.showToast({
+          title: '关注成功' });
+
+      } else {
+        item.isguanZhu = false;
+        uni.showToast({
+          title: '取消关注' });
+
+      }
+    },
+    //@tap="dingCai(2,item)"
+    dingCai: function dingCai(num, item) {
+      if (num == 1) {
+        if (item.infoNum.index == 1) {
+          uni.showToast({
+            title: '您已经操作过了' });
+
+          return false;
+        }
+        if (item.infoNum.index != 0) {
+          item.infoNum.caiNum--;
+        }
+        item.infoNum.dingNum++;
+        item.infoNum.index = num;
+        uni.showToast({
+          title: '顶' });
+
+      } else if (num == 2) {
+        if (item.infoNum.index == 2) {
+          uni.showToast({
+            title: '您已经操作过了' });
+
+          return false;
+        }
+        if (item.infoNum.index != 0) {
+          item.infoNum.dingNum--;
+        }
+        item.infoNum.caiNum++;
+        item.infoNum.index = num;
+        uni.showToast({
+          title: '踩' });
+
+      }
+    },
+    loadingMore: function loadingMore(idx) {var _this2 = this;
+      var moreIndex = this.newsList[idx].loadingMore;
+      if (moreIndex != '上拉加载更多') {
+        return;
+      }
+      this.newsList[idx].loadingMore = '加载中......';
+      setTimeout(function () {
+        var obj = {
+          userpic: '../../static/demo/userpic/12.jpg',
+          username: '鲁大师1',
+          isguanZhu: false,
+          title: '我是标题',
+          type: 'img', //img:图文，video:视频
+          titlepic: '../../static/demo/datapic/11.jpg',
+          playNum: 200000,
+          longTime: '2:47',
+          infoNum: {
+            dingNum: 11,
+            caiNum: 11,
+            index: 1 //0:代表没有操作1：顶2：踩
+          },
+          commentNum: 20,
+          shareNum: 20 };
+
+        _this2.newsList[idx].list.push(obj);
+        _this2.newsList[idx].loadingMore = '上拉加载更多';
+      }, 1000);
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

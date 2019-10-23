@@ -1,11 +1,11 @@
 <template>
-	<view class="index-items">
+	<view class="index-items animated bounceInLeft">
 		<view class="index-item-one">
 			<view>
 				<image :src="item.userpic" mode="widthFix" lazy-load></image>
 				{{ item.username }}
 			</view>
-			<view class="index-item-one-add " :class="{ active: item.isguanZhu }">
+			<view class="index-item-one-add " :class="{ active: item.isguanZhu }" @tap="changeIsguanZhu">
 				<template v-if="!item.isguanZhu">
 					<view class="iconfont icon-tag27fuben"></view>
 					关注
@@ -52,7 +52,22 @@
 export default {
 	props: {
 		item: Object,
-		index:Number
+		index: Number
+	},
+	methods: {
+		changeIsguanZhu() {
+			if (!this.item.isguanZhu) {
+				this.item.isguanZhu = true;
+				uni.showToast({
+					title: '关注成功'
+				});
+			} else {
+				this.item.isguanZhu = false;
+				uni.showToast({
+					title: '取消关注'
+				});
+			}
+		}
 	}
 };
 </script>
@@ -60,7 +75,7 @@ export default {
 <style scoped>
 .index-items {
 	padding: 25upx 26upx 40upx;
-	border-bottom: 1upx solid #c8c7cc;
+	border-bottom: 1upx solid #f8f8f8;
 }
 .index-item-one {
 	display: flex;
@@ -132,6 +147,7 @@ export default {
 	color: #ffffff;
 }
 .index-item-four {
+	margin-top: 10upx;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;

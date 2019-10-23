@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "index-list": "/common/index/indexList"
+    "index-list": "/common/index/indexList",
+    "swiper-tab-head": "/common/index/swiperTabHead",
+    "load-more": "/common/common/loadmore",
+    "nothing": "/common/common/nothing"
   }
 }

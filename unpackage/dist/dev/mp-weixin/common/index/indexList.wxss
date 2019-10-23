@@ -1,7 +1,7 @@
 
 .index-items.data-v-6a03fdf2 {
 	padding: 25rpx 26rpx 40rpx;
-	border-bottom: 1rpx solid #c8c7cc;
+	border-bottom: 1rpx solid #f8f8f8;
 }
 .index-item-one.data-v-6a03fdf2 {
 	display: -webkit-box;
@@ -89,6 +89,7 @@
 	color: #ffffff;
 }
 .index-item-four.data-v-6a03fdf2 {
+	margin-top: 10rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
