@@ -1,5 +1,6 @@
 {
   "scrollIndicator": "none",
+  "bounce": "none",
   "titleNView": {
     "searchInput": {
       "align": "center",

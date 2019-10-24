@@ -5,6 +5,7 @@
 			"style": {
 				"app-plus": {
 					"scrollIndicator": "none",
+					"bounce":"none",
 					"titleNView": {
 						//配置搜索框
 						"searchInput": {
@@ -16,22 +17,21 @@
 							"disabled": true
 						},
 						//配置按钮
-						"buttons":[
-							{
-								"color":"#FFDD48",
-								"float":"left",
-								"colorPressed":"#bbbbbb",
-								"fontSize":"28px",
-								"fontSrc":"/static/font/iconfont.ttf",
-								"text":"\ue648"
+						"buttons": [{
+								"color": "#FFDD48",
+								"float": "left",
+								"colorPressed": "#bbbbbb",
+								"fontSize": "28px",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue648"
 							},
 							{
-								"color":"#CCCCCC",
-								"float":"right",
-								"colorPressed":"#bbbbbb",
-								"fontSize":"28px",
-								"fontSrc":"/static/font/iconfont.ttf",
-								"text":"\ue634"
+								"color": "#CCCCCC",
+								"float": "right",
+								"colorPressed": "#bbbbbb",
+								"fontSize": "28px",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue634"
 							}
 						]
 					}
@@ -46,8 +46,47 @@
 		}, {
 			"path": "pages/home/home",
 			"style": {}
+		}, {
+			"path": "search/search",
+			"style": {
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce":"none",//取消反弹
+					"titleNView": {
+						//配置搜索框
+						"autoBackButton":false,
+						"searchInput": {
+							"align": "left",
+							"backgroundColor": "#f7f7f7",
+							"borderRadius": "8px",
+							"placeholder": "搜索糗事",
+							"placeholderColor": "#cccccc",
+							"disabled": false
+						},
+						//配置按钮
+						"buttons": [
+							{
+								"color": "#000000",
+								"float": "right",
+								"colorPressed": "#bbbbbb",
+								"fontSize": "16px",
+								"text": "取消"
+							}
+						]
+					}
+				}
+				
+			}
 		}
-	],
+	    ,{
+            "path" : "pages/addIndex/addIndex",
+            "style" : {
+				"app-plus":{
+					"titleNView":false//禁止原生导航
+				}
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "糗事百科",

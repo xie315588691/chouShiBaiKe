@@ -1,0 +1,25 @@
+
+.add-navbar-center {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.uni-textarea {
+	width: 100%;
+	background: #fff;
+	border: 1rpx solid #eeeeee;
+}
+.uni-textarea textarea {
+	width: 96%;
+	padding: 18rpx 2%;
+	line-height: 1.6;
+	font-size: 28rpx;
+	height: 150rpx;
+}
+

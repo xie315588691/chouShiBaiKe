@@ -355,8 +355,21 @@ export default {
 			]
 		};
 	},
+	onNavigationBarButtonTap(e) {
+		if(e.index ==1){
+			uni.navigateTo({
+				url:'../addIndex/addIndex'
+			})
+		}
+	},
 	onLoad() {
 		this.getSysHeight();
+	},
+	onNavigationBarSearchInputClicked() {
+		console.log('searchclick')
+		uni.navigateTo({
+			url:'../../search/search'
+		})
 	},
 	methods: {
 		getSysHeight() {
