@@ -9,6 +9,7 @@
 						<uni-icons :type="leftIcon" :color="color" size="24" />
 					</view>
 					<view v-if="leftText.length" :class="{'uni-navbar-btn-icon-left':!leftIcon.length}" class="uni-navbar-btn-text uni-navbar__content_view">{{ leftText }}</view>
+					<!-- left -->
 					<slot name="left" />
 				</view>
 				<view class="uni-navbar__header-container uni-navbar__content_view">

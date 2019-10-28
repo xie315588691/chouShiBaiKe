@@ -1,0 +1,20 @@
+
+.news-update-lists.data-v-9ff6356a{
+	padding: 34rpx 0;
+	border-bottom: 1rpx solid #f4f4f4;
+}
+.news-update-lists image.data-v-9ff6356a{
+	width: 180rpx;
+	border-radius: 16rpx;
+	margin-right: 30rpx;
+}
+.news-update-title.data-v-9ff6356a{
+	font-size: 32rpx;
+	font-weight: 700;
+	color: #444444;
+}
+.news-update-item.data-v-9ff6356a{
+	font-size: 28rpx;
+	color: #9D9D9D;
+}
+

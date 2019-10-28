@@ -1,0 +1,49 @@
+
+.add-navbar-center {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.uni-textarea {
+	width: 100%;
+	background: #fff;
+}
+.uni-textarea textarea {
+	width: 96%;
+	padding: 18rpx 2%;
+	line-height: 1.6;
+	font-size: 28rpx;
+	height: 150rpx;
+}
+.uni-tip {
+	padding: 15px;
+	width: 300px;
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	border-radius: 10px;
+}
+.uni-tip image {
+	width: 500rpx;
+}
+.uni-tip-title {
+	font-size: 28rpx;
+	text-align: left;
+	font-weight: 700;
+	color: #333;
+}
+.uni-tip button {
+	background-color: #ffe934;
+	margin-top: 16rpx;
+}
+.uni-list::before,
+.uni-list::after {
+	background-color: #ffffff;
+}
+

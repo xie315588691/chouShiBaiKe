@@ -131,51 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexList = function IndexList() {return __webpack_require__.e(/*! import() | common/index/indexList */ "common/index/indexList").then(__webpack_require__.bind(null, /*! ../../common/index/indexList.vue */ 41));};var swiperTabHead = function swiperTabHead() {return __webpack_require__.e(/*! import() | common/index/swiperTabHead */ "common/index/swiperTabHead").then(__webpack_require__.bind(null, /*! ../../common/index/swiperTabHead.vue */ 48));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | common/common/loadmore */ "common/common/loadmore").then(__webpack_require__.bind(null, /*! ../../common/common/loadmore.vue */ 59));};var nothing = function nothing() {return __webpack_require__.e(/*! import() | common/common/nothing */ "common/common/nothing").then(__webpack_require__.bind(null, /*! ../../common/common/nothing.vue */ 64));};var _default =
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexList = function IndexList() {return __webpack_require__.e(/*! import() | common/index/indexList */ "common/index/indexList").then(__webpack_require__.bind(null, /*! ../../common/index/indexList.vue */ 57));};var swiperTabHead = function swiperTabHead() {return __webpack_require__.e(/*! import() | common/index/swiperTabHead */ "common/index/swiperTabHead").then(__webpack_require__.bind(null, /*! ../../common/index/swiperTabHead.vue */ 64));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | common/common/loadmore */ "common/common/loadmore").then(__webpack_require__.bind(null, /*! ../../common/common/loadmore.vue */ 71));};var nothing = function nothing() {return __webpack_require__.e(/*! import() | common/common/nothing */ "common/common/nothing").then(__webpack_require__.bind(null, /*! ../../common/common/nothing.vue */ 76));};var _default =
 
 
 
@@ -248,6 +204,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
       tabIndex: 1,
+      scrollIndex: '',
       newsList: [
       {
         loadingMore: '上拉加载更多',
@@ -488,8 +445,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
   },
+  onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
+    if (e.index == 1) {
+      uni.navigateTo({
+        url: '../addIndex/addIndex' });
+
+    }
+  },
   onLoad: function onLoad() {
     this.getSysHeight();
+  },
+  onNavigationBarSearchInputClicked: function onNavigationBarSearchInputClicked() {
+    console.log('searchclick');
+    uni.navigateTo({
+      url: '../../search/search' });
+
   },
   methods: {
     getSysHeight: function getSysHeight() {var _this = this;
@@ -502,61 +472,13 @@ __webpack_require__.r(__webpack_exports__);
     ontabchange: function ontabchange(e) {
       var index = e.target.current || e.detail.current;
       this.tabIndex = index;
+      // console.log(index)
+      this.scrollIndex = this.tabBars[index].id;
+      // console.log(this.scrollIndex)
     },
     changeIndex: function changeIndex(val) {
       this.tabIndex = val;
-    },
-    changeObj: function changeObj(obj) {
-      console.log(obj);
-      // this.newsList[item.index][item][isguanZhu] = true;
-    },
-    //关注
-    changeIsguanZhu: function changeIsguanZhu(item) {
-      if (!item.isguanZhu) {
-        item.isguanZhu = true;
-        uni.showToast({
-          title: '关注成功' });
 
-      } else {
-        item.isguanZhu = false;
-        uni.showToast({
-          title: '取消关注' });
-
-      }
-    },
-    //@tap="dingCai(2,item)"
-    dingCai: function dingCai(num, item) {
-      if (num == 1) {
-        if (item.infoNum.index == 1) {
-          uni.showToast({
-            title: '您已经操作过了' });
-
-          return false;
-        }
-        if (item.infoNum.index != 0) {
-          item.infoNum.caiNum--;
-        }
-        item.infoNum.dingNum++;
-        item.infoNum.index = num;
-        uni.showToast({
-          title: '顶' });
-
-      } else if (num == 2) {
-        if (item.infoNum.index == 2) {
-          uni.showToast({
-            title: '您已经操作过了' });
-
-          return false;
-        }
-        if (item.infoNum.index != 0) {
-          item.infoNum.dingNum--;
-        }
-        item.infoNum.caiNum++;
-        item.infoNum.index = num;
-        uni.showToast({
-          title: '踩' });
-
-      }
     },
     loadingMore: function loadingMore(idx) {var _this2 = this;
       var moreIndex = this.newsList[idx].loadingMore;

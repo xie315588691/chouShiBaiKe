@@ -5,8 +5,8 @@
 				<image :src="item.userpic" mode="widthFix" lazy-load></image>
 				{{ item.username }}
 			</view>
-			<view class="index-item-one-add " :class="{ active: item.isguanZhu }" @tap="changeIsguanZhu">
-				<template v-if="!item.isguanZhu">
+			<view class="index-item-one-add " :class="{ active: isguanZhu }" @tap="changeIsguanZhu">
+				<template v-if="!isguanZhu">
 					<view class="iconfont icon-tag27fuben"></view>
 					关注
 				</template>
@@ -25,13 +25,13 @@
 		</view>
 		<view class="index-item-four">
 			<view class="index-item-four-list">
-				<view :class="{ active: item.infoNum.index == 1 }">
+				<view :class="{ active: InfoNumIndex == 1 }" @tap="dingCai(1)">
 					<view class="iconfont icon-icon "></view>
-					<view>{{ item.infoNum.dingNum }}</view>
+					<view>{{ dingNum }}</view>
 				</view>
-				<view :class="{ active: item.infoNum.index == 2 }">
+				<view :class="{ active: InfoNumIndex == 2 }" @tap="dingCai(2)">
 					<view class="iconfont icon-kulian1"></view>
-					<view>{{ item.infoNum.caiNum }}</view>
+					<view>{{ caiNum }}</view>
 				</view>
 			</view>
 			<view class="index-item-four-list">
@@ -54,18 +54,49 @@ export default {
 		item: Object,
 		index: Number
 	},
+	data() {
+		return {
+			isguanZhu: this.item.isguanZhu,
+			InfoNumIndex: this.item.infoNum.index,
+			dingNum: this.item.infoNum.dingNum,
+			caiNum: this.item.infoNum.caiNum
+		};
+	},
 	methods: {
 		changeIsguanZhu() {
-			if (!this.item.isguanZhu) {
-				this.item.isguanZhu = true;
+			if (!this.isguanZhu) {
+				this.isguanZhu = true;
 				uni.showToast({
 					title: '关注成功'
 				});
 			} else {
-				this.item.isguanZhu = false;
+				this.isguanZhu = false;
 				uni.showToast({
 					title: '取消关注'
 				});
+			}
+		},
+		dingCai(num) {
+			if (this.InfoNumIndex == num) {
+				uni.showToast({
+					title:"您已经操作过了！"
+				})
+				return
+			}
+
+			this.InfoNumIndex = num;
+			if (num == 1) {
+				uni.showToast({
+					title:"顶"
+				})
+				this.caiNum--;
+				this.dingNum++;
+			} else if (num == 2) {
+				uni.showToast({
+					title:"踩"
+				})
+				this.dingNum--;
+				this.caiNum++;
 			}
 		}
 	}

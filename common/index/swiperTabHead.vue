@@ -1,7 +1,7 @@
 <template>
 	<view class="tabs">
-		<scroll-view class="scroll-h" :scroll-x="true" :show-scrollbar="false">
-			<view class="uni-tab-item" v-for="(item, index) in tabBars" :key="index">
+		<scroll-view id="tab-bar" class="scroll-h" :scroll-x="true" :show-scrollbar="false" :scroll-into-view="scrollInto">
+			<view class="uni-tab-item" v-for="(item, index) in tabBars" :id="item.id" :key="index">
 				<view class="uni-tab-item-title" :class="{ 'uni-tab-item-title-active': tabIndex == index }" @tap="changeTabIndex(index)">
 					<text>{{ item.name }}</text>
 				</view>
@@ -14,7 +14,13 @@
 export default {
 	props:{
 		tabBars:Array,
-		tabIndex :Number
+		tabIndex :Number,
+		scrollIndex:String
+	},
+	data(){
+		return{
+			scrollInto:this.scrollIndex
+		}
 	},
 	methods: {
 		changeTabIndex(index) {

@@ -1,65 +1,21 @@
 <template>
 	<view class="index">
-		<swiperTabHead :tabBars="tabBars" :tabIndex="tabIndex" @changeIndex="changeIndex"></swiperTabHead>
+		<swiperTabHead :tabBars="tabBars" :tabIndex="tabIndex" @changeIndex="changeIndex" :scrollIndex="scrollIndex"></swiperTabHead>
 		<view class="uni-tab-bar">
 			<swiper class="swiper-box" :style="{ height: swiperHeigh + 'px' }" :current="tabIndex" @change="ontabchange">
 				<swiper-item class="swiper-item" v-for="(items, idx) in newsList" :key="idx">
 					<scroll-view scroll-y="true" class="scroll-v list" @scrolltolower="loadingMore(idx)">
 						<template v-if="items.list.length">
 							<block v-for="(item, index) in items.list" :key="index">
-								<!-- 列表 -->
-								<view class="index-items animated bounceInLeft">
-									<view class="index-item-one">
-										<view>
-											<image :src="item.userpic" mode="widthFix" lazy-load></image>
-											{{ item.username }}
-										</view>
-										<view class="index-item-one-add " :class="{ active: item.isguanZhu }" 
-										@tap="changeIsguanZhu(item)">
-											<template v-if="!item.isguanZhu">
-												<view class="iconfont icon-tag27fuben"></view>
-												关注
-											</template>
-											<template v-else>
-												已关注
-											</template>
-										</view>
-									</view>
-									<view class="index-item-two">{{ item.title }}</view>
-									<view class="index-item-three">
-										<image :src="item.titlepic" mode="widthFix" lazy-load></image>
-										<template v-if="item.type == 'video'">
-											<view class="iconfont icon-bofang"></view>
-											<view class="index-video-info">20W 次播放 {{ item.longTime }}</view>
-										</template>
-									</view>
-									<view class="index-item-four">
-										<view class="index-item-four-list">
-											<view :class="{ active: item.infoNum.index == 1 }" @tap="dingCai(1, item)">
-												<view class="iconfont icon-icon "></view>
-												<view>{{ item.infoNum.dingNum }}</view>
-											</view>
-											<view :class="{ active: item.infoNum.index == 2 }" @tap="dingCai(2, item)">
-												<view class="iconfont icon-kulian1"></view>
-												<view>{{ item.infoNum.caiNum }}</view>
-											</view>
-										</view>
-										<view class="index-item-four-list">
-											<view class="">
-												<view class="iconfont icon-xiaoxi"></view>
-												<view>{{ item.commentNum }}</view>
-											</view>
-											<view>
-												<view class="iconfont icon-zhuanfa1"></view>
-												<view>{{ item.shareNum }}</view>
-											</view>
-										</view>
-									</view>
-								</view>
+								<!-- items -->
+								<IndexList :item="item"></IndexList>
+							
 							</block>
+							<!-- loading-more -->
 							<loadMore :loadText="items.loadingMore"></loadMore>
 						</template>
 						<template v-else>
+							<!-- nothing -->
 							<nothing></nothing>
 						</template>
 					</scroll-view>
@@ -115,6 +71,7 @@ export default {
 				}
 			],
 			tabIndex: 1,
+			scrollIndex:'',
 			newsList: [
 				{
 					loadingMore: '上拉加载更多',
@@ -382,61 +339,13 @@ export default {
 		ontabchange(e) {
 			let index = e.target.current || e.detail.current;
 			this.tabIndex = index;
+			// console.log(index)
+			this.scrollIndex = this.tabBars[index].id
+			// console.log(this.scrollIndex)
 		},
 		changeIndex(val) {
 			this.tabIndex = val;
-		},
-		changeObj(obj) {
-			console.log(obj);
-			// this.newsList[item.index][item][isguanZhu] = true;
-		},
-		//关注
-		changeIsguanZhu(item) {
-			if (!item.isguanZhu) {
-				item.isguanZhu = true;
-				uni.showToast({
-					title: '关注成功'
-				});
-			} else {
-				item.isguanZhu = false;
-				uni.showToast({
-					title: '取消关注'
-				});
-			}
-		},
-		//@tap="dingCai(2,item)"
-		dingCai(num, item) {
-			if (num == 1) {
-				if (item.infoNum.index == 1) {
-					uni.showToast({
-						title: '您已经操作过了'
-					});
-					return false;
-				}
-				if (item.infoNum.index != 0) {
-					item.infoNum.caiNum--;
-				}
-				item.infoNum.dingNum++;
-				item.infoNum.index = num;
-				uni.showToast({
-					title: '顶'
-				});
-			} else if (num == 2) {
-				if (item.infoNum.index == 2) {
-					uni.showToast({
-						title: '您已经操作过了'
-					});
-					return false;
-				}
-				if (item.infoNum.index != 0) {
-					item.infoNum.dingNum--;
-				}
-				item.infoNum.caiNum++;
-				item.infoNum.index = num;
-				uni.showToast({
-					title: '踩'
-				});
-			}
+			
 		},
 		loadingMore(idx) {
 			let moreIndex = this.newsList[idx].loadingMore;

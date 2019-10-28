@@ -39,7 +39,11 @@
 			}
 		}, {
 			"path": "pages/news/news",
-			"style": {}
+			"style": {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
 		}, {
 			"path": "pages/paper/paper",
 			"style": {}
@@ -84,6 +88,12 @@
 				"app-plus":{
 					"titleNView":false//禁止原生导航
 				}
+			}
+        }
+        ,{
+            "path" : "pages/topic-nav/topic-nav",
+            "style" : {
+				"navigationBarTitleText":"话题分类"
 			}
         }
     ],
