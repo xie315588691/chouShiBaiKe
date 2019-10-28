@@ -227,7 +227,6 @@ export default {
 		getWinHeight() {
 			uni.getSystemInfo({
 				success: res => {
-					console.log(res.windowHeight);
 					this.swiperHeigh = res.windowHeight - uni.upx2px(80);
 				}
 			});
@@ -259,6 +258,6 @@ export default {
 
 <style scoped>
 	.topic-nav{
-		margin: 0 20upx;
+		padding: 0 20upx;
 	}
 </style>

@@ -1,2 +1,2 @@
-setCssToHead([".",[1],"topic-nav.",[1],"data-v-138e1ac8{ margin: 0 ",[0,20],"; }\n",],undefined,{path:"./pages/topic-nav/topic-nav.wxss"})();
+setCssToHead([".",[1],"topic-nav.",[1],"data-v-138e1ac8{ padding: 0 ",[0,20],"; }\n",],undefined,{path:"./pages/topic-nav/topic-nav.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/topic-nav/topic-nav.wxml') } }));

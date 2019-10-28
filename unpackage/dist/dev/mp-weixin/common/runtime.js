@@ -1,5 +1,5 @@
 
-  !function(){try{var r=Function("return this")();r&&!r.Math&&Object.assign(r,{Array:Array,Date:Date,Error:Error,Function:Function,Math:Math,Object:Object,RegExp:RegExp,String:String,TypeError:TypeError,setTimeout:setTimeout,clearTimeout:clearTimeout,setInterval:setInterval,clearInterval:clearInterval})}catch(r){}}();
+  !function(){try{var a=Function("return this")();a&&!a.Math&&(Object.assign(a,{Array:Array,Date:Date,Error:Error,Function:Function,Math:Math,Object:Object,RegExp:RegExp,String:String,TypeError:TypeError,setTimeout:setTimeout,clearTimeout:clearTimeout,setInterval:setInterval,clearInterval:clearInterval}),"undefined"!=typeof Reflect&&(a.Reflect=Reflect))}catch(a){}}();
   /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	function webpackJsonpCallback(data) {
@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"common/common/nothing":1,"common/index/indexList":1,"common/index/swiperTabHead":1,"common/common/newsList":1,"common/uni-nav-bar/uni-nav-bar":1,"common/uni-popup/uni-popup":1,"common/common/uploadImages":1,"common/uni-icons/uni-icons":1,"common/uni-status-bar/uni-status-bar":1};
+/******/ 		var cssChunks = {"common/common/nothing":1,"common/index/indexList":1,"common/index/swiperTabHead":1,"common/common/newsList":1,"common/news/news-update-lists":1,"common/uni-nav-bar/uni-nav-bar":1,"common/uni-popup/uni-popup":1,"common/common/uploadImages":1,"common/uni-icons/uni-icons":1,"common/uni-status-bar/uni-status-bar":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"common/common/loadmore":"common/common/loadmore","common/common/nothing":"common/common/nothing","common/index/indexList":"common/index/indexList","common/index/swiperTabHead":"common/index/swiperTabHead","common/common/newsList":"common/common/newsList","common/uni-nav-bar/uni-nav-bar":"common/uni-nav-bar/uni-nav-bar","common/uni-popup/uni-popup":"common/uni-popup/uni-popup","common/common/uploadImages":"common/common/uploadImages","common/uni-icons/uni-icons":"common/uni-icons/uni-icons","common/uni-status-bar/uni-status-bar":"common/uni-status-bar/uni-status-bar"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"common/common/loadmore":"common/common/loadmore","common/common/nothing":"common/common/nothing","common/index/indexList":"common/index/indexList","common/index/swiperTabHead":"common/index/swiperTabHead","common/common/newsList":"common/common/newsList","common/news/news-update-lists":"common/news/news-update-lists","common/uni-nav-bar/uni-nav-bar":"common/uni-nav-bar/uni-nav-bar","common/uni-popup/uni-popup":"common/uni-popup/uni-popup","common/common/uploadImages":"common/common/uploadImages","common/uni-icons/uni-icons":"common/uni-icons/uni-icons","common/uni-status-bar/uni-status-bar":"common/uni-status-bar/uni-status-bar"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

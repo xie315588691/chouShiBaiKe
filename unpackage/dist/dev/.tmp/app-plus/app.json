@@ -6,7 +6,8 @@
     "pages/home/home",
     "search/search",
     "pages/addIndex/addIndex",
-    "pages/topic-nav/topic-nav"
+    "pages/topic-nav/topic-nav",
+    "pages/topic-detail/topic-detail"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -53,6 +54,6 @@
     "autoclose": false
   },
   "appname": "chouShiBaiKe",
-  "compilerVersion": "2.3.6",
+  "compilerVersion": "2.3.7",
   "usingComponents": {}
 }

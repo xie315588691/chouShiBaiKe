@@ -122,7 +122,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniNavBar = function uniNavBar() {return __webpack_require__.e(/*! import() | common/uni-nav-bar/uni-nav-bar */ "common/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! ../../common/uni-nav-bar/uni-nav-bar.vue */ 83));};var newsList = function newsList() {return __webpack_require__.e(/*! import() | common/common/newsList */ "common/common/newsList").then(__webpack_require__.bind(null, /*! ../../common/common/newsList.vue */ 90));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | common/common/loadmore */ "common/common/loadmore").then(__webpack_require__.bind(null, /*! ../../common/common/loadmore.vue */ 71));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniNavBar = function uniNavBar() {return __webpack_require__.e(/*! import() | common/uni-nav-bar/uni-nav-bar */ "common/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! ../../common/uni-nav-bar/uni-nav-bar.vue */ 99));};var newsList = function newsList() {return __webpack_require__.e(/*! import() | common/common/newsList */ "common/common/newsList").then(__webpack_require__.bind(null, /*! ../../common/common/newsList.vue */ 106));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | common/common/loadmore */ "common/common/loadmore").then(__webpack_require__.bind(null, /*! ../../common/common/loadmore.vue */ 87));};var newsUpdateList = function newsUpdateList() {return __webpack_require__.e(/*! import() | common/news/news-update-lists */ "common/news/news-update-lists").then(__webpack_require__.bind(null, /*! ../../common/news/news-update-lists.vue */ 113));};var _default =
+
 
 
 
@@ -195,7 +196,8 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     uniNavBar: uniNavBar,
     newsList: newsList,
-    loadMore: loadMore },
+    loadMore: loadMore,
+    newsUpdateList: newsUpdateList },
 
   data: function data() {
     return {
@@ -208,24 +210,11 @@ __webpack_require__.r(__webpack_exports__);
         id: 'guanzhu' }],
 
 
-      banners: [
-      { src: '../../static/demo/banner1.jpg' },
-      { src: '../../static/demo/banner2.jpg' },
-      { src: '../../static/demo/banner1.jpg' }],
-
-      hotPic: [
-      '最新',
-      '游戏',
-      '情感',
-      '最新',
-      '游戏',
-      '情感'],
-
-      newsList:
-      {
+      banners: [{ src: '../../static/demo/banner1.jpg' }, { src: '../../static/demo/banner2.jpg' }, { src: '../../static/demo/banner1.jpg' }],
+      hotPic: ['最新', '游戏', '情感', '最新', '游戏', '情感'],
+      newsList: {
         loadingMore: '上拉加载更多',
         list: [{ id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }] } };
-
 
 
   },
@@ -268,6 +257,11 @@ __webpack_require__.r(__webpack_exports__);
         _this2.newsList.list.push(obj);
         _this2.newsList.loadingMore = '上拉加载更多';
       }, 1000);
+    },
+    gotoTopic: function gotoTopic() {
+      uni.navigateTo({
+        url: '../topic-nav/topic-nav' });
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

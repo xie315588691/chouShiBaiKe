@@ -1,5 +1,5 @@
 <template>
-	<view class="news-update-lists df animated bounceInLeft">
+	<view class="news-update-lists df animated bounceInLeft" @tap="openDetail">
 		<image src="../../static/demo/topicpic/14.jpeg" mode="widthFix" lazy-load></image>
 		<view>
 			<view class="news-update-title">
@@ -16,6 +16,15 @@
 </template>
 
 <script>
+	export default{
+		methods:{
+			openDetail(){
+				uni.navigateTo({
+					url:'../../pages/topic-detail/topic-detail'
+				})
+			}
+		}
+	}
 </script>
 
 <style scoped>
@@ -27,6 +36,9 @@
 		width: 180upx;
 		border-radius: 16upx;
 		margin-right: 30upx;
+	}
+	.news-update-lists > view{
+		width: 100%;
 	}
 	.news-update-title{
 		font-size: 32upx;
