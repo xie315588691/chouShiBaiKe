@@ -1,0 +1,29 @@
+{
+  "scrollIndicator": "none",
+  "animationType": "slide-in-left",
+  "bounce": "none",
+  "titleNView": {
+    "autoBackButton": false,
+    "searchInput": {
+      "align": "left",
+      "backgroundColor": "#f7f7f7",
+      "borderRadius": "8px",
+      "placeholder": "搜索糗事",
+      "placeholderColor": "#cccccc",
+      "disabled": false
+    },
+    "buttons": [
+      {
+        "color": "#000000",
+        "float": "right",
+        "colorPressed": "#bbbbbb",
+        "fontSize": "16px",
+        "text": "取消"
+      }
+    ]
+  },
+  "usingComponents": {
+    "new-head": "/common/common/new-head",
+    "user-item": "/common/user/user-item"
+  }
+}

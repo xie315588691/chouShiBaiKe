@@ -1,0 +1,39 @@
+
+.user-item {
+	height: 170rpx;
+	border-bottom: 1rpx solid #ececec;
+}
+.user-item .icon-dui{
+	color: #CCCCCC;
+}
+.user-item .icon-jia1{
+	color: #F8781A;
+}
+.user-item-t image {
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+	margin-right: 30rpx;
+}
+.user-item-title {
+	font-size: 34rpx;
+	font-weight: 700;
+	color: #000000;
+}
+.user-item-sex {
+	font-size: 24rpx;
+	display: inline-block;
+	height: 32rpx;
+	border-radius: 16rpx;
+	background-color: #ff658a;
+	line-height: 32rpx;
+	padding: 0 12rpx;
+	color: #ffffff;
+}
+.user-item-sex.nan {
+	background-color: #3aafff;
+}
+.user-item-sex .iconfont {
+	font-size: 24rpx;
+}
+

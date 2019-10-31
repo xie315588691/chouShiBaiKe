@@ -13,7 +13,7 @@
 	        justify-content: center;
 }
 .news-tabbar-center > view {
-	margin-left: 40rpx;
+	width: 33%;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -27,6 +27,7 @@
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	text-align: center;
 }
 .news-tabbar-center text {
 	display: inline-block;
@@ -36,6 +37,7 @@
 	height: 10rpx;
 	width: 60rpx;
 	border-radius: 5rpx;
+	margin: 0 auto;
 }
 .news-tabbar-center .active text {
 	color: #000000;

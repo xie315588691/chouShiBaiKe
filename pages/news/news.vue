@@ -77,7 +77,7 @@ export default {
 	},
 	data() {
 		return {
-			tabBarIndex: 1,
+			tabBarIndex: 0,
 			swiperHeigh: 500,
 			tabBars: [
 				{ name: '话题', id: 'hauti' },

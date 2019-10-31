@@ -1,7 +1,7 @@
 <template>
-	<view class="news-tabbar-center">
-		<view :class="{ active: tabBarIndex == index }" v-for="(item, index) in tabBars" :key="index" @tap="changeTabIndex(index)">
-			<text>{{ item.name }}</text>
+	<view class="news-tabbar-center" :class="{ 'news-head-flex': isFlex }">
+		<view :class="{ active: tabBarIndex == index }" :style="tabbarWidth" v-for="(item, index) in tabBars" :key="index" @tap="changeTabIndex(index)">
+			<text>{{ item.name }} {{ item.num ? item.num : '' }}</text>
 			<view class="uni-tab-line"></view>
 		</view>
 	</view>
@@ -14,11 +14,19 @@ export default {
 			type: Number,
 			default: 0
 		},
-		tabBars:{
-			type:Array,
-			default:()=>{
+		tabBars: {
+			type: Array,
+			default: () => {
 				return [];
 			}
+		},
+		tabbarWidth: {
+			type: String,
+			default: 'width:50%;'
+		},
+		isFlex: {
+			type: Boolean,
+			default: true
 		}
 	},
 	data() {
@@ -42,10 +50,11 @@ export default {
 	justify-content: center;
 }
 .news-tabbar-center > view {
-	margin-left: 40upx;
+	width: 33%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 }
 .news-tabbar-center text {
 	display: inline-block;
@@ -56,6 +65,7 @@ export default {
 	height: 10upx;
 	width: 60upx;
 	border-radius: 5upx;
+	margin: 0 auto;
 }
 .news-tabbar-center .active text {
 	color: #000000;

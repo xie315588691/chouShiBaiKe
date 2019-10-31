@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "new-head": "/common/common/new-head",
+    "user-item": "/common/user/user-item"
+  }
+}

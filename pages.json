@@ -47,7 +47,7 @@
 		}, {
 			"path": "pages/paper/paper",
 			"style": {
-				"enablePullDownRefresh":true,
+				"enablePullDownRefresh": true,
 				"navigationBarTitleText": "小字条",
 				"app-plus": {
 					"titleNView": {
@@ -127,6 +127,35 @@
 						"buttons": [{
 							"type": "menu",
 							"float": "right"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/user-list/user-list",
+			"style": {
+				"app-plus": {
+					"scrollIndicator": "none",
+					"animationType":"slide-in-left",//进场动画
+					"bounce": "none", //取消反弹
+					"titleNView": {
+						//配置搜索框
+						"autoBackButton": false,
+						"searchInput": {
+							"align": "left",
+							"backgroundColor": "#f7f7f7",
+							"borderRadius": "8px",
+							"placeholder": "搜索糗事",
+							"placeholderColor": "#cccccc",
+							"disabled": false
+						},
+						//配置按钮
+						"buttons": [{
+							"color": "#000000",
+							"float": "right",
+							"colorPressed": "#bbbbbb",
+							"fontSize": "16px",
+							"text": "取消"
 						}]
 					}
 				}
