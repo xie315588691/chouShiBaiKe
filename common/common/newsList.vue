@@ -172,11 +172,13 @@ export default {
 }
 .newslist-three .iconfont {
 	font-size: 140upx;
+	line-height: 1;
 	color: #fff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50% -50%);
+	margin-left: -70upx;
+	margin-top: -70upx;
 }
 .newslist-four {
 	color: #bbbbbb;

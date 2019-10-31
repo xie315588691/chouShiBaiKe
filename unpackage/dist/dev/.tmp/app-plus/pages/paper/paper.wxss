@@ -1,0 +1,51 @@
+
+.paper {
+}
+.paper-item {
+	margin: 0 24rpx;
+	padding: 20rpx 0 30rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	border-bottom: 1rpx solid #efefef;
+}
+.paper-item > image {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	margin-right: 20rpx;
+}
+.paper-item-info {
+	width: 100%;
+}
+.paper-name {
+	font-size: 32rpx;
+	color: #000000;
+	font-weight: 700;
+}
+.paper-time {
+	font-size: 24rpx;
+	color: 3cfcfcf;
+}
+.paper-title {
+	display: inline-block;
+	font-size: 28rpx;
+	line-height: 40rpx;
+	color: #999999;
+	width: 440rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+}
+.paper-tip {
+	display: inline-block;
+	line-height: 40rpx;
+	color: #ffffff;
+	background-color: #ff6434;
+	border-radius: 20rpx;
+	font-size: 24rpx;
+	padding: 0 14rpx;
+}
+

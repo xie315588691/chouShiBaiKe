@@ -1,3 +1,27 @@
 {
-  "usingComponents": {}
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "小字条",
+  "titleNView": {
+    "buttons": [
+      {
+        "color": "#000000",
+        "float": "left",
+        "colorPressed": "#bbbbbb",
+        "fontSize": "28px",
+        "fontSrc": "/static/font/iconfont.ttf",
+        "text": ""
+      },
+      {
+        "color": "#000000",
+        "float": "right",
+        "colorPressed": "#bbbbbb",
+        "fontSize": "24px",
+        "fontSrc": "/static/font/iconfont.ttf",
+        "text": ""
+      }
+    ]
+  },
+  "usingComponents": {
+    "paper-list": "/common/paper/paper-list"
+  }
 }

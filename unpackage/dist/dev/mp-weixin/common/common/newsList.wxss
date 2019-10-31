@@ -84,13 +84,13 @@
 }
 .newslist-three .iconfont.data-v-3fff8bae {
 	font-size: 140rpx;
+	line-height: 1;
 	color: #fff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	-webkit-transform: translate(-50% -50%);
-	    -ms-transform: translate(-50% -50%);
-	        transform: translate(-50% -50%);
+	margin-left: -70rpx;
+	margin-top: -70rpx;
 }
 .newslist-four.data-v-3fff8bae {
 	color: #bbbbbb;

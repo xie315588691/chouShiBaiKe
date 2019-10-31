@@ -11,4 +11,7 @@
 </script>
 
 <style>
+	.index-loading-more{
+		text-align: center;
+	}
 </style>

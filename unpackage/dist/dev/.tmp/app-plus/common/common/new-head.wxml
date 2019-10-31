@@ -1,0 +1,1 @@
+<view class="news-tabbar-center"><block wx:for="{{tabBars}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['changeTabIndex',[index]]]]]}}" class="{{[(tabBarIndex==index)?'active':'']}}" bindtap="__e"><text>{{item.name}}</text><view class="uni-tab-line"></view></view></block></view>

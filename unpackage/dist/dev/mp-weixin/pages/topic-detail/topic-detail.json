@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "topic-info": "/common/news/topic-info",
+    "new-head": "/common/common/new-head",
+    "news-list": "/common/common/newsList",
+    "load-more": "/common/common/loadmore"
+  }
 }

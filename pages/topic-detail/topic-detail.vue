@@ -1,64 +1,91 @@
 <template>
 	<view>
-		<view class="topic-bg"><image src="../../static/demo/topicpic/13.jpeg" mode="aspectFill" lazy-load></image></view>
-		<view class="topic-info">
-			<view class="topic-info-one">
-				<image src="../../static/demo/topicpic/13.jpeg" mode="aspectFill" lazy-load></image>
-				<view>#忆往事，敬余生#</view>
-			</view>
-			<view class="topic-info-two">
-				动态：793 今日641
-			</view>
-			<view class="topic-info-three">
-				面试官：在电梯里巧遇马云你会做什么？90后女孩的回答当场被录用
-			</view>
+		<topic-info ref="topicInfo"></topic-info>
+		<new-head @changeTabbarIdx="changeTabbarIdx" :tabBarIndex="tabBarIndex" :tabBars="tabBars"></new-head>
+
+		<view class="uni-tab-bar">
+			<swiper :current="tabBarIndex" class="swiper-box" :style="{ height: swiperHeigh + 'px' }" @change="ontabchange">
+				<!-- huati -->
+				<swiper-item class="swiper-item" v-for="(item, idx) in newsList" :key="idx">
+					<scroll-view scroll-y="true" class="scroll-v list" @scrolltolower="loadMore(idx)">
+						<block v-for="(val, index) in item.list" :key="index"><news-list :item="val"></news-list></block>
+						<load-more :loadText="item.loadingMore"></load-more>
+					</scroll-view>
+				</swiper-item>
+				<!-- guanzhu -->
+			</swiper>
 		</view>
 	</view>
 </template>
 
 <script>
+import topicInfo from '../../common/news/topic-info.vue';
+import newHead from '../../common/common/new-head.vue';
+import newsList from '../../common/common/newsList.vue';
+import loadMore from '../../common/common/loadmore.vue';
 export default {
-	data() {
-		return {};
+	components: {
+		topicInfo,
+		newHead,
+		newsList,
+		loadMore
 	},
-	methods: {}
+	data() {
+		return {
+			tabBars: [
+				{ name: '话题', id: 'hauti' },
+				{
+					name: '关注',
+					id: 'guanzhu'
+				}
+			],
+			tabBarIndex: 0,
+			swiperHeigh: 420,
+			newsList: [
+				{
+					loadingMore: '上拉加载更多',
+					list: [{ id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }]
+				},
+				{
+					loadingMore: '上拉加载更多',
+					list: [{ id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }]
+				}
+			]
+		};
+	},
+	onLoad() {},
+	//下拉刷新
+	onPullDownRefresh() {
+		console.log('refresh');
+		setTimeout(function() {
+			uni.stopPullDownRefresh();
+		}, 1000);
+	},
+	methods: {
+		changeTabbarIdx(index) {
+			this.tabBarIndex = index;
+		},
+		ontabchange(e) {
+			let index = e.target.current || e.detail.current;
+			this.tabBarIndex = index;
+		},
+		//加载更多
+		loadMore(idx) {
+			let moreIndex = this.newsList[idx].loadingMore;
+			if (moreIndex != '上拉加载更多') {
+				return;
+			}
+			this.newsList.loadingMore = '加载中......';
+			setTimeout(() => {
+				let obj = {
+					shareNum: 20
+				};
+				this.newsList[idx].list.push(obj);
+				this.newsList[idx].loadingMore = '上拉加载更多';
+			}, 1000);
+		}
+	}
 };
 </script>
 
-<style>
-.topic-bg {
-	width: 100%;
-	height: 300upx;
-	position: relative;
-	overflow: hidden;
-}
-.topic-bg > image {
-	width: 100%;
-	filter: blur(10upx);
-}
-.topic-info{
-	padding: 0 75upx 0 20upx;
-}
-.topic-info-one {
-	display: flex;
-	font-size: 42upx;
-	height: 100upx;
-	font-weight: 700;
-}
-.topic-info-one image {
-	width: 150upx;
-	height: 150upx;
-	border-radius: 16upx;
-	margin-right: 20upx;
-	transform: translateY(-75upx);
-}
-.topic-info-two{
-	font-size: 28upx;
-	color: #D3D3D3;
-}
-.topic-info-three{
-	font-size: 30upx;
-	color: #A7A7A7;
-}
-
-</style>
+<style></style>
