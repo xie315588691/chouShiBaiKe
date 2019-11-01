@@ -161,7 +161,27 @@
 				}
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/user-chart/user-chart",
+            "style" : {
+				"navigationBarTitleText":"聊天页",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"float":"right",
+								"color":"#000000",
+								"fontSize":"26px",
+								"colorPressed": "#bbbbbb",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue61d"
+							}
+						]
+					}
+				}
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "糗事百科",

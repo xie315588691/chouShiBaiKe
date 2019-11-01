@@ -12,7 +12,9 @@
 				清除未读
 			</view>
 		</view>
-		<block v-for="(item, idx) in list" :key="idx"><paper-list :item="item"></paper-list></block>
+		<block v-for="(item, idx) in list" :key="idx">
+			<paper-list :item="item"></paper-list>
+			</block>
 	</view>
 </template>
 

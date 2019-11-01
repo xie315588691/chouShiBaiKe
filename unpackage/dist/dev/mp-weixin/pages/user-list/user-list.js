@@ -122,7 +122,26 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var newHead = function newHead() {return __webpack_require__.e(/*! import() | common/common/new-head */ "common/common/new-head").then(__webpack_require__.bind(null, /*! ../../common/common/new-head.vue */ 161));};var userItem = function userItem() {return __webpack_require__.e(/*! import() | common/user/user-item */ "common/user/user-item").then(__webpack_require__.bind(null, /*! ../../common/user/user-item.vue */ 168));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var newHead = function newHead() {return __webpack_require__.e(/*! import() | common/common/new-head */ "common/common/new-head").then(__webpack_require__.bind(null, /*! ../../common/common/new-head.vue */ 167));};var userItem = function userItem() {return __webpack_require__.e(/*! import() | common/user/user-item */ "common/user/user-item").then(__webpack_require__.bind(null, /*! ../../common/user/user-item.vue */ 174));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | common/common/loadmore */ "common/common/loadmore").then(__webpack_require__.bind(null, /*! ../../common/common/loadmore.vue */ 101));};var nothing = function nothing() {return __webpack_require__.e(/*! import() | common/common/nothing */ "common/common/nothing").then(__webpack_require__.bind(null, /*! ../../common/common/nothing.vue */ 108));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -139,11 +158,14 @@ __webpack_require__.r(__webpack_exports__);
 {
   components: {
     newHead: newHead,
-    userItem: userItem },
+    userItem: userItem,
+    loadMore: loadMore,
+    nothing: nothing },
 
   data: function data() {
     return {
       tabBarIndex: 0,
+      swiperHeigh: 500,
       tabBars: [
       { name: '互关', id: 'huguan', num: 10 },
       { name: '互助', id: 'huzhu', num: 10 },
@@ -153,42 +175,148 @@ __webpack_require__.r(__webpack_exports__);
         num: 10 }],
 
 
-      userList: [
+      newsList: [
       {
-        userImg: '../../static/demo/demo6.jpg',
-        username: '木壳果儿',
-        sex: 0, //0:nv 1:nan
-        age: 21,
-        iconbtn: 0 //0:dui 1:jia
-      },
+        loadingMore: '上拉加载更多',
+        list: [
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 21,
+          iconbtn: 0 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 1, //0:nv 1:nan
+          age: 22,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 23,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 1, //0:nv 1:nan
+          age: 29,
+          iconbtn: 0 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 29,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 29,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 29,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 29,
+          iconbtn: 1 //0:dui 1:jia
+        }] },
+
+
       {
-        userImg: '../../static/demo/demo6.jpg',
-        username: '木壳果儿',
-        sex: 1, //0:nv 1:nan
-        age: 22,
-        iconbtn: 1 //0:dui 1:jia
-      },
+        loadingMore: '上拉加载更多',
+        list: [
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 21,
+          iconbtn: 0 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 1, //0:nv 1:nan
+          age: 22,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 23,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 1, //0:nv 1:nan
+          age: 29,
+          iconbtn: 0 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 29,
+          iconbtn: 1 //0:dui 1:jia
+        }] },
+
+
       {
-        userImg: '../../static/demo/demo6.jpg',
-        username: '木壳果儿',
-        sex: 0, //0:nv 1:nan
-        age: 23,
-        iconbtn: 1 //0:dui 1:jia
-      },
-      {
-        userImg: '../../static/demo/demo6.jpg',
-        username: '木壳果儿',
-        sex: 1, //0:nv 1:nan
-        age: 29,
-        iconbtn: 0 //0:dui 1:jia
-      },
-      {
-        userImg: '../../static/demo/demo6.jpg',
-        username: '木壳果儿',
-        sex: 0, //0:nv 1:nan
-        age: 29,
-        iconbtn: 1 //0:dui 1:jia
-      }] };
+        loadingMore: '上拉加载更多',
+        list: [
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 21,
+          iconbtn: 0 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 1, //0:nv 1:nan
+          age: 22,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 23,
+          iconbtn: 1 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 1, //0:nv 1:nan
+          age: 29,
+          iconbtn: 0 //0:dui 1:jia
+        },
+        {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 29,
+          iconbtn: 1 //0:dui 1:jia
+        }] }] };
+
+
 
 
   },
@@ -199,9 +327,44 @@ __webpack_require__.r(__webpack_exports__);
 
     }
   },
+  onLoad: function onLoad() {
+    this.getSysHeight();
+  },
   methods: {
+    getSysHeight: function getSysHeight() {var _this = this;
+      uni.getSystemInfo({
+        success: function success(res) {
+          _this.swiperHeigh = res.windowHeight - uni.upx2px(80);
+        } });
+
+    },
     changeTabbarIdx: function changeTabbarIdx(index) {
       this.tabBarIndex = index;
+    },
+    ontabchange: function ontabchange(e) {
+      var index = e.target.current || e.detail.current;
+      this.tabBarIndex = index;
+      // console.log(index)
+      // this.scrollIndex = this.tabBars[index].id
+      // console.log(this.scrollIndex)
+    },
+    loadingMore: function loadingMore(idx) {var _this2 = this;
+      var moreIndex = this.newsList[idx].loadingMore;
+      if (moreIndex != '上拉加载更多') {
+        return;
+      }
+      this.newsList[idx].loadingMore = '加载中......';
+      setTimeout(function () {
+        var obj = {
+          userImg: '../../static/demo/demo6.jpg',
+          username: '木壳果儿',
+          sex: 0, //0:nv 1:nan
+          age: 29,
+          iconbtn: 1 //0:dui 1:jia
+        };
+        _this2.newsList[idx].list.push(obj);
+        _this2.newsList[idx].loadingMore = '上拉加载更多';
+      }, 1000);
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

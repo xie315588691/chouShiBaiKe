@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"user-chart { padding-bottom: ",[0,130],"; }\n",],undefined,{path:"./pages/user-chart/user-chart.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user-chart/user-chart.wxml') } }));

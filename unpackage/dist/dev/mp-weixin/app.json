@@ -8,7 +8,8 @@
     "pages/addIndex/addIndex",
     "pages/topic-nav/topic-nav",
     "pages/topic-detail/topic-detail",
-    "pages/user-list/user-list"
+    "pages/user-list/user-list",
+    "pages/user-chart/user-chart"
   ],
   "subPackages": [],
   "window": {
@@ -49,6 +50,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap0.json"
+  "usingComponents": {}
 }

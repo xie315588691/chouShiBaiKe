@@ -1,0 +1,19 @@
+{
+  "navigationBarTitleText": "聊天页",
+  "titleNView": {
+    "buttons": [
+      {
+        "float": "right",
+        "color": "#000000",
+        "fontSize": "26px",
+        "colorPressed": "#bbbbbb",
+        "fontSrc": "/static/font/iconfont.ttf",
+        "text": ""
+      }
+    ]
+  },
+  "usingComponents": {
+    "user-chart-button": "/common/user/user-chart-button",
+    "user-chart-list": "/common/user/user-chart-list"
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-	<view class="paper-item animated bounceInLeft">
+	<view class="paper-item animated bounceInLeft" @tap="gotoChart">
 		<image :src="item.userpic" mode="aspectFill" lazy-load></image>
 		<view class="paper-item-info">
 			<view class="paper-item-one df df-j-s-b df-a-c">
@@ -18,6 +18,13 @@
 export default {
 	props: {
 		item: Object
+	},
+	methods:{
+		gotoChart(){
+			uni.navigateTo({
+				url:'../../pages/user-chart/user-chart'
+			})
+		}
 	}
 };
 </script>
