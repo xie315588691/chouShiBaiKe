@@ -325,7 +325,7 @@ export default {
 	onNavigationBarSearchInputClicked() {
 		console.log('searchclick')
 		uni.navigateTo({
-			url:'../../search/search'
+			url:'../search/search'
 		})
 	},
 	methods: {

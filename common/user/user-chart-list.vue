@@ -1,6 +1,6 @@
 <template>
-	<view>
-		<view class="user-chart-time df df-j-c">{{ item.time }}</view>
+	<view class="user-chart-list">
+		<view class="user-chart-time df df-j-c">{{ getDataTime(item.time) }}</view>
 		<view class="user-chart-left " :class="{ 'user-chart-me': item.isme }">
 			<image :src="item.userpic" mode="widthFix" lazy-load v-if="!item.isme"></image>
 			<view>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-
+import time from '../time.js'
 export default {
 	props: {
 		item: {
@@ -26,7 +26,18 @@ export default {
 	onLoad() {
 		// const aa = moment().format('YYYY-MM-DD hh:mm:ss');
 		console.log('time');
+	},
+	computed:{
+		timmer(){
+			return time.gettime.gettime('1572622004')
+		}
+	},
+	methods:{
+		getDataTime(datatime){
+			return time.gettime.gettime(datatime)
+		}
 	}
+	
 };
 </script>
 

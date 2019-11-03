@@ -15,8 +15,8 @@ export default {
 	},
 	methods: {
 		submit() {
-			console.log('submit');
 			this.$emit('submit', this.text);
+			this.text =''
 		}
 	}
 };

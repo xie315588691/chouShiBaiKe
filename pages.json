@@ -76,8 +76,9 @@
 			"path": "pages/home/home",
 			"style": {}
 		}, {
-			"path": "search/search",
+			"path": "pages/search/search",
 			"style": {
+				"enablePullDownRefresh":true,
 				"app-plus": {
 					"scrollIndicator": "none",
 					"bounce": "none", //取消反弹
