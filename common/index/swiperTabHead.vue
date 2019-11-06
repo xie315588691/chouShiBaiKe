@@ -12,19 +12,19 @@
 
 <script>
 export default {
-	props:{
-		tabBars:Array,
-		tabIndex :Number,
-		scrollIndex:String
+	props: {
+		tabBars: Array,
+		tabIndex: Number,
+		scrollIndex: String
 	},
-	data(){
-		return{
-			scrollInto:this.scrollIndex
-		}
+	data() {
+		return {
+			scrollInto: this.scrollIndex
+		};
 	},
 	methods: {
 		changeTabIndex(index) {
-			this.$emit('changeIndex',index)
+			this.$emit('changeIndex', index);
 		}
 	}
 };

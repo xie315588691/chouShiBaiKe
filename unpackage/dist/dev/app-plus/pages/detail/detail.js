@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"detail-common-title { font-size: ",[0,32],"; font-weight: 700; color: #000000; padding: ",[0,10]," ",[0,20],"; }\n",],undefined,{path:"./pages/detail/detail.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/detail/detail.wxml') } }));

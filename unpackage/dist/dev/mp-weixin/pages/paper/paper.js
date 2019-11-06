@@ -127,7 +127,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var paperList = function paperList() {return __webpack_require__.e(/*! import() | common/paper/paper-list */ "common/paper/paper-list").then(__webpack_require__.bind(null, /*! ../../common/paper/paper-list.vue */ 136));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var paperList = function paperList() {return __webpack_require__.e(/*! import() | common/paper/paper-list */ "common/paper/paper-list").then(__webpack_require__.bind(null, /*! ../../common/paper/paper-list.vue */ 149));};var _default =
 
 
 

@@ -1,0 +1,88 @@
+
+.user-chart-time.data-v-043a7c67 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 30rpx 0;
+	color: #a2a2a2;
+	font-size: 24rpx;
+}
+.user-chart-left.data-v-043a7c67 {
+	padding: 0 100rpx 0 30rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 40rpx;
+}
+.user-chart-left > image.data-v-043a7c67 {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	margin-right: 50rpx;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+}
+.user-chart-left view.data-v-043a7c67 {
+	font-size: 32rpx;
+	padding: 30rpx;
+	background-color: #f4f4f4;
+	border-radius: 20rpx;
+	position: relative;
+}
+.user-chart-left view.data-v-043a7c67::before {
+	content: '';
+	display: block;
+	width: 30rpx;
+	height: 30rpx;
+	background-color: #f4f4f4;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	position: absolute;
+	top: 36rpx;
+	left: -16rpx;
+}
+.user-chart-left view image.data-v-043a7c67 {
+	max-width: 180rpx;
+	max-height: 180rpx;
+}
+.user-chart-left.user-chart-me.data-v-043a7c67 {
+	padding: 0 30rpx 0 100rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+.user-chart-left.user-chart-me image.data-v-043a7c67 {
+	margin-right: 0;
+	margin-left: 50rpx;
+}
+.user-chart-left.user-chart-me view.data-v-043a7c67::before {
+	content: '';
+	display: none;
+}
+.user-chart-left.user-chart-me view.data-v-043a7c67::after {
+	content: '';
+	display: block;
+	width: 30rpx;
+	height: 30rpx;
+	background-color: #f4f4f4;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	position: absolute;
+	top: 36rpx;
+	right: -16rpx;
+}
+

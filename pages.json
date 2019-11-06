@@ -74,7 +74,21 @@
 			}
 		}, {
 			"path": "pages/home/home",
-			"style": {}
+			"style": {
+				"navigationBarTitleText":"我的",
+				"app-plus":{
+					"bounce":"none",
+					"scrollIndicator":"none",
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu",
+								"float":"right"
+							}
+						]
+					}
+				}
+			}
 		}, {
 			"path": "pages/search/search",
 			"style": {
@@ -176,6 +190,23 @@
 								"colorPressed": "#bbbbbb",
 								"fontSrc": "/static/font/iconfont.ttf",
 								"text": "\ue61d"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" : {
+				"navigationBarTitleText":"内容详情",
+				"app-plus":{
+					"bounce":"none",
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu",
+								"float":"right"
 							}
 						]
 					}

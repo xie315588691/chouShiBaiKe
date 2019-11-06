@@ -1,0 +1,7 @@
+
+.detail-common-other {
+	border-radius: 8rpx;
+	background-color: #f4f4f4;
+	padding: 20rpx;
+}
+

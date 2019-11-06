@@ -4,12 +4,13 @@
     "pages/news/news",
     "pages/paper/paper",
     "pages/home/home",
-    "search/search",
+    "pages/search/search",
     "pages/addIndex/addIndex",
     "pages/topic-nav/topic-nav",
     "pages/topic-detail/topic-detail",
     "pages/user-list/user-list",
-    "pages/user-chart/user-chart"
+    "pages/user-chart/user-chart",
+    "pages/detail/detail"
   ],
   "subPackages": [],
   "window": {

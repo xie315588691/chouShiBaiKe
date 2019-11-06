@@ -131,7 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexList = function IndexList() {return __webpack_require__.e(/*! import() | common/index/indexList */ "common/index/indexList").then(__webpack_require__.bind(null, /*! ../../common/index/indexList.vue */ 87));};var swiperTabHead = function swiperTabHead() {return __webpack_require__.e(/*! import() | common/index/swiperTabHead */ "common/index/swiperTabHead").then(__webpack_require__.bind(null, /*! ../../common/index/swiperTabHead.vue */ 94));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | common/common/loadmore */ "common/common/loadmore").then(__webpack_require__.bind(null, /*! ../../common/common/loadmore.vue */ 101));};var nothing = function nothing() {return __webpack_require__.e(/*! import() | common/common/nothing */ "common/common/nothing").then(__webpack_require__.bind(null, /*! ../../common/common/nothing.vue */ 108));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexList = function IndexList() {return __webpack_require__.e(/*! import() | common/index/indexList */ "common/index/indexList").then(__webpack_require__.bind(null, /*! ../../common/index/indexList.vue */ 100));};var swiperTabHead = function swiperTabHead() {return __webpack_require__.e(/*! import() | common/index/swiperTabHead */ "common/index/swiperTabHead").then(__webpack_require__.bind(null, /*! ../../common/index/swiperTabHead.vue */ 107));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | common/common/loadmore */ "common/common/loadmore").then(__webpack_require__.bind(null, /*! ../../common/common/loadmore.vue */ 114));};var nothing = function nothing() {return __webpack_require__.e(/*! import() | common/common/nothing */ "common/common/nothing").then(__webpack_require__.bind(null, /*! ../../common/common/nothing.vue */ 121));};var _default =
 
 
 
@@ -458,7 +458,7 @@ __webpack_require__.r(__webpack_exports__);
   onNavigationBarSearchInputClicked: function onNavigationBarSearchInputClicked() {
     console.log('searchclick');
     uni.navigateTo({
-      url: '../../search/search' });
+      url: '../search/search' });
 
   },
   methods: {

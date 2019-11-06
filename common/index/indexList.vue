@@ -1,5 +1,5 @@
 <template>
-	<view class="index-items animated bounceInLeft">
+	<view class="index-items animated bounceInLeft" @tap="toDetail(22)">
 		<view class="index-item-one">
 			<view>
 				<image :src="item.userpic" mode="widthFix" lazy-load></image>
@@ -98,6 +98,11 @@ export default {
 				this.dingNum--;
 				this.caiNum++;
 			}
+		},
+		toDetail(id){
+			uni.navigateTo({
+				url:'../../pages/detail/detail?id='+id
+			})
 		}
 	}
 };
