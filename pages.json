@@ -213,6 +213,30 @@
 				}
 			}
         }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" : {
+				"navigationBarTitleText":"设置"
+			}
+        }
+        ,{
+            "path" : "pages/user-psd/user-psd",
+            "style" : {
+				"navigationBarTitleText":"修改密码"
+			}
+        }
+        ,{
+            "path" : "pages/bound-email/bound-email",
+            "style" : {
+				"navigationBarTitleText":"绑定邮箱"
+			}
+        }
+        ,{
+            "path" : "pages/user-set-userinfo/user-set-userinfo",
+            "style" : {
+				"navigationBarTitleText":"修改资料"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

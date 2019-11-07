@@ -10,7 +10,11 @@
     "pages/topic-detail/topic-detail",
     "pages/user-list/user-list",
     "pages/user-chart/user-chart",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/setting/setting",
+    "pages/user-psd/user-psd",
+    "pages/bound-email/bound-email",
+    "pages/user-set-userinfo/user-set-userinfo"
   ],
   "window": {
     "navigationBarTextStyle": "black",

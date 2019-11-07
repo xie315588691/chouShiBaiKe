@@ -29,26 +29,100 @@
 	display: -ms-flexbox;
 	display: flex;
 }
-.home-act >view{
+.home-act > view {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
 	text-align: center;
 }
-.home-act-num{
+.home-act-num {
 	font-size: 36rpx;
 	color: #000000;
 }
-.home-act-text{
+.home-act-text {
 	font-size: 26rpx;
-	color: #A5A5A5;
+	color: #a5a5a5;
 }
-.home-img{
+.home-img {
 	padding: 24rpx;
 }
-.home-img image{
+.home-img image {
 	width: 100%;
 	border-radius: 12rpx;
+}
+.home-setting {
+	margin: 0 25rpx;
+	border-top: 1rpx solid #f2f2f2;
+}
+.home-setting-item {
+	height: 110rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 0 30rpx;
+	border-bottom: 1rpx solid #f2f2f2;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.home-setting-item view .iconfont {
+	margin-right: 15rpx;
+}
+.home-setting-item .icon-yanjing1 {
+	color: #3aaeff;
+}
+.home-setting-item .icon-jianpan {
+	color: #3aaeff;
+}
+.home-setting-item .icon-renzheng1 {
+	color: #ff7434;
+}
+.home-setting-item .icon-you {
+	color: #c1c1c1;
+}
+.home-islogin {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 120rpx;
+	padding: 20rpx 30rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.home-islogin image{
+	width: 110rpx;
+	height: 110rpx;
+	border-radius: 50%;
+	margin-right: 20rpx;
+}
+.home-islogin-l{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.home-islogin-info-name{
+	font-size: 32rpx;
+	font-weight: 700;
+}
+.home-islogin-info-num{
+	font-size: 24rpx;
+	color: #8D8D8D;
 }
 
