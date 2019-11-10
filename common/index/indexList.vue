@@ -5,7 +5,7 @@
 				<image :src="item.userpic" mode="widthFix" lazy-load></image>
 				{{ item.username }}
 			</view>
-			<view class="index-item-one-add " :class="{ active: isguanZhu }" @tap="changeIsguanZhu">
+			<view class="index-item-one-add " :class="{ active: isguanZhu }" @tap.stop="changeIsguanZhu">
 				<template v-if="!isguanZhu">
 					<view class="iconfont icon-tag27fuben"></view>
 					关注
@@ -25,11 +25,11 @@
 		</view>
 		<view class="index-item-four">
 			<view class="index-item-four-list">
-				<view :class="{ active: InfoNumIndex == 1 }" @tap="dingCai(1)">
+				<view :class="{ active: InfoNumIndex == 1 }" @tap.stop="dingCai(1)">
 					<view class="iconfont icon-icon "></view>
 					<view>{{ dingNum }}</view>
 				</view>
-				<view :class="{ active: InfoNumIndex == 2 }" @tap="dingCai(2)">
+				<view :class="{ active: InfoNumIndex == 2 }" @tap.stop="dingCai(2)">
 					<view class="iconfont icon-kulian1"></view>
 					<view>{{ caiNum }}</view>
 				</view>

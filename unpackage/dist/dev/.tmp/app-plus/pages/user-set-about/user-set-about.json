@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "关于糗事百科",
+  "usingComponents": {
+    "uni-collapse": "/common/uni-collapse/uni-collapse",
+    "uni-collapse-item": "/common/uni-collapse-item/uni-collapse-item"
+  }
+}

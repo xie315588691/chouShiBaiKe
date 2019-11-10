@@ -1,0 +1,63 @@
+
+.home-setting {
+	margin: 0 25rpx;
+}
+.setting-user-img {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.setting-user-img .icon-xie {
+	margin-left: 20rpx;
+}
+.setting-user-img input {
+	text-align: right;
+}
+.setting-item-title {
+	font-size: 36rpx;
+	font-weight: 700;
+	color: #949494;
+}
+.home-setting-item {
+	height: 110rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 0 30rpx;
+	border-bottom: 1rpx solid #f2f2f2;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.home-setting-user {
+	height: 170rpx;
+}
+.home-setting-user image {
+	height: 100rpx;
+	width: 100rpx;
+	border-radius: 50%;
+}
+.home-setting-item-hover {
+	background-color: #f1f1f1;
+}
+.home-setting-item .iconfont {
+	color: #cccccc;
+}
+.layout {
+	margin: 40rpx 90rpx;
+	background-color: #ffe933;
+}
+

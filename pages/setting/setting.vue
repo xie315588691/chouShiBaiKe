@@ -19,25 +19,25 @@
 				</view>
 				<text class="iconfont icon-you"></text>
 			</view>
-			<view class="home-setting-item" hover-class="home-setting-item-hover">
+			<view class="home-setting-item" hover-class="home-setting-item-hover" @tap="gotoSwitch('../paper/paper')">
 				<view>
 					小字条
 				</view>
 				<text class="iconfont icon-you"></text>
 			</view>
-			<view class="home-setting-item" hover-class="home-setting-item-hover">
+			<view class="home-setting-item" hover-class="home-setting-item-hover" @tap="clear">
 				<view>
 					清除缓存
 				</view>
 				<text class="iconfont icon-you"></text>
 			</view>
-			<view class="home-setting-item" hover-class="home-setting-item-hover">
+			<view class="home-setting-item" hover-class="home-setting-item-hover" @tap="gotoPage('../user-set-help/user-set-help')">
 				<view>
 					意见反馈
 				</view>
 				<text class="iconfont icon-you"></text>
 			</view>
-			<view class="home-setting-item" hover-class="home-setting-item-hover">
+			<view class="home-setting-item" hover-class="home-setting-item-hover" @tap="gotoPage('../user-set-about/user-set-about')">
 				<view>
 					关于糗事百科
 				</view>
@@ -61,6 +61,28 @@
 				uni.navigateTo({
 					url:val
 				})
+			},
+			gotoSwitch(val){
+				uni.switchTab({
+					url:val
+				})
+			},
+			clear(){
+				uni.showModal({
+				    title: '提示',
+				    content: '是否要清除缓存',
+				    success: function (res) {
+				        if (res.confirm) {
+				            console.log('用户点击确定');
+							uni.clearStorage()
+							uni.showToast({
+								title:'清除成功'
+							})
+				        } else if (res.cancel) {
+				            console.log('用户点击取消');
+				        }
+				    }
+				});
 			}
 		}
 	}

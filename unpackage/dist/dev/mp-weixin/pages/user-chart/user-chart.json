@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "聊天页",
-  "usingComponents": {
-    "user-chart-button": "/common/user/user-chart-button",
-    "user-chart-list": "/common/user/user-chart-list"
-  }
-}

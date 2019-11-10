@@ -1,7 +1,0 @@
-{
-  "enablePullDownRefresh": true,
-  "navigationBarTitleText": "小字条",
-  "usingComponents": {
-    "paper-list": "/common/paper/paper-list"
-  }
-}

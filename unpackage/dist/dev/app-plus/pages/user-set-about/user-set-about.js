@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"about-logo { width: ",[0,570],"; margin: ",[0,100]," auto ",[0,40],"; }\n.",[1],"about-logo wx-image { width: ",[0,570],"; }\n.",[1],"about-version { text-align: center; color: #cdcdcd; margin-bottom: ",[0,60],"; }\n",],undefined,{path:"./pages/user-set-about/user-set-about.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user-set-about/user-set-about.wxml') } }));

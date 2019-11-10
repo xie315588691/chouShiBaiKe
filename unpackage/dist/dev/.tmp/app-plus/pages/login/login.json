@@ -1,0 +1,8 @@
+{
+  "titleNView": false,
+  "scrollIndicator": "none",
+  "usingComponents": {
+    "uni-status-bar": "/common/uni-status-bar/uni-status-bar",
+    "other-login": "/common/common/other-login"
+  }
+}

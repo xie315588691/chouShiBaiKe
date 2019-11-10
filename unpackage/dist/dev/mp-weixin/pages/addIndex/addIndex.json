@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "uni-nav-bar": "/common/uni-nav-bar/uni-nav-bar",
-    "upload-images": "/common/common/uploadImages",
-    "uni-popup": "/common/uni-popup/uni-popup"
-  }
-}

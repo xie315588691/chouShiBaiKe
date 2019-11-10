@@ -1,0 +1,14 @@
+
+.about-logo {
+	width: 570rpx;
+	margin: 100rpx auto 40rpx;
+}
+.about-logo image {
+	width: 570rpx;
+}
+.about-version {
+	text-align: center;
+	color: #cdcdcd;
+	margin-bottom: 60rpx;
+}
+

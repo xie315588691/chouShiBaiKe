@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "修改资料",
-  "usingComponents": {}
+  "usingComponents": {
+    "mpvue-city-picker": "/common/mpvue-citypicker/mpvueCityPicker"
+  }
 }

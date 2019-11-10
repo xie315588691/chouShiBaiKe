@@ -13,7 +13,7 @@
 		<upload-images @getImageList="getImageList"></upload-images>
 		<!-- 中间弹框 -->
 		<uni-popup ref="popup" :show="show" :type="type" :custom="true" :mask-click="false">
-			<view class="uni-tip">
+			<view class="uni-tip ">
 				<image src="../../static/mimo/addinput.png" mode="widthFix"></image>
 				<view class="uni-tip-title">1.涉及黄色，政治，广告及骚扰信息</view>
 				<view class="uni-tip-title">2.涉及人身攻击</view>

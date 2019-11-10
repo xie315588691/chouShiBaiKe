@@ -1,0 +1,79 @@
+
+.user-space-bg {
+	width: 100%;
+	height: 500rpx;
+	overflow: hidden;
+	position: relative;
+}
+.user-space-bg image {
+	width: 100%;
+}
+.user-space-bg-info {
+	position: absolute;
+	top: 100rpx;
+	left: 0;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.user-space-bg-info image {
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 50%;
+}
+.user-space-bg-info-name {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 40rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 32rpx;
+	color: #ffffff;
+	margin: 30rpx 0;
+}
+.user-space-bg-info-name > view {
+	display: inline-block;
+	height: 30rpx;
+	border: 1rpx solid #ffffff;
+	font-size: 20rpx;
+	line-height: 30rpx;
+	padding: 0 15rpx;
+	border-radius: 15rpx;
+	background-color: #41a6ea;
+
+	margin-left: 15rpx;
+}
+.user-space-bg-info-name .iconfont {
+	font-size: 20rpx;
+}
+.ser-space-bg-info-guanzhu {
+	display: inline-block;
+	height: 50rpx;
+	padding: 0 15rpx;
+	line-height: 50rpx;
+	background-color: #ffe933;
+	border-radius: 8rpx;
+}
+.ser-space-bg-info-guanzhu.active{
+	background-color: #C0C0C0;
+}
+

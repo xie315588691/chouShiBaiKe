@@ -1,8 +1,0 @@
-{
-  "usingComponents": {
-    "uni-nav-bar": "/common/uni-nav-bar/uni-nav-bar",
-    "news-list": "/common/common/newsList",
-    "load-more": "/common/common/loadmore",
-    "news-update-list": "/common/news/news-update-lists"
-  }
-}

@@ -1,5 +1,6 @@
 <template>
-	<view :style="{ height: statusBarHeight }" class="uni-status-bar">
+	<!-- background-color: ; -->
+	<view :style="{ height: statusBarHeight ,backgroundColor:bgC}" class="uni-status-bar">
 		<slot />
 	</view>
 </template>
@@ -8,6 +9,12 @@
 	var statusBarHeight = uni.getSystemInfoSync().statusBarHeight + 'px'
 	export default {
 		name: 'UniStatusBar',
+		props:{
+			bgC:{
+				type:String,
+				default:"#FFFFFF"
+			}
+		},
 		data() {
 			return {
 				statusBarHeight: statusBarHeight
@@ -21,6 +28,5 @@
 		display: block;
 		width: 100%;
 		height: 20px;
-		height: var(--status-bar-height);
 	}
 </style>

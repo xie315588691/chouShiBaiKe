@@ -1,8 +1,0 @@
-{
-  "usingComponents": {
-    "new-head": "/common/common/new-head",
-    "user-item": "/common/user/user-item",
-    "load-more": "/common/common/loadmore",
-    "nothing": "/common/common/nothing"
-  }
-}

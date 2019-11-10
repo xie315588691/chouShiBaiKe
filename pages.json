@@ -123,6 +123,7 @@
 			"path": "pages/addIndex/addIndex",
 			"style": {
 				"app-plus": {
+					"animationType":"slide-in-bottom",
 					"titleNView": false //禁止原生导航
 				}
 			}
@@ -235,6 +236,45 @@
             "path" : "pages/user-set-userinfo/user-set-userinfo",
             "style" : {
 				"navigationBarTitleText":"修改资料"
+			}
+        }
+        ,{
+            "path" : "pages/user-set-help/user-set-help",
+            "style" : {
+				"navigationBarTitleText":"意见反馈"
+			}
+        }
+        ,{
+            "path" : "pages/user-set-about/user-set-about",
+            "style" : {
+				"navigationBarTitleText":"关于糗事百科"
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"app-plus":{
+					"titleNView":false,
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user-space/user-space",
+            "style" : {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"titleNView":{
+						"type":"transparent",
+						"buttons":[
+						{
+								"type":"menu",
+								"float":"right"
+							}
+						]
+					}
+				}
 			}
         }
     ],

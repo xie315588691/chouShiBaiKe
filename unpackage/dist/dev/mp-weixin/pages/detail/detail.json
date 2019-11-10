@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "内容详情",
-  "usingComponents": {
-    "detail-list": "/common/detail/detail-list",
-    "user-chart-button": "/common/user/user-chart-button",
-    "detail-common-list": "/common/detail/detail-common-list"
-  }
-}

@@ -14,7 +14,11 @@
     "pages/setting/setting",
     "pages/user-psd/user-psd",
     "pages/bound-email/bound-email",
-    "pages/user-set-userinfo/user-set-userinfo"
+    "pages/user-set-userinfo/user-set-userinfo",
+    "pages/user-set-help/user-set-help",
+    "pages/user-set-about/user-set-about",
+    "pages/login/login",
+    "pages/user-space/user-space"
   ],
   "window": {
     "navigationBarTextStyle": "black",

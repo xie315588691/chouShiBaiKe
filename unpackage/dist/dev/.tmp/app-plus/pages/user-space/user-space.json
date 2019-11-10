@@ -1,0 +1,19 @@
+{
+  "navigationStyle": "custom",
+  "scrollIndicator": "none",
+  "titleNView": {
+    "type": "transparent",
+    "buttons": [
+      {
+        "type": "menu",
+        "float": "right"
+      }
+    ]
+  },
+  "usingComponents": {
+    "user-space-bg": "/common/user-space/user-space-bg",
+    "new-head": "/common/common/new-head",
+    "news-list": "/common/common/newsList",
+    "user-space-menu": "/common/user-space/user-space-menu"
+  }
+}

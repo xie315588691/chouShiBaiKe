@@ -1,0 +1,14 @@
+
+.home-login.data-v-42112df8 {
+	padding-top: 30rpx;
+	text-align: center;
+}
+.home-login image.data-v-42112df8 {
+	width: 110rpx;
+	height: 110rpx;
+	padding-left: 40rpx;
+}
+.home-login image.data-v-42112df8:first-of-type {
+	padding-left: 0;
+}
+

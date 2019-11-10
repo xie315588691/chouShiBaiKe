@@ -1,0 +1,1 @@
+<view class="home-login data-v-42112df8"><block wx:for="{{providerList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block class="data-v-42112df8"><image src="{{item.img}}" lazy-load data-event-opts="{{[['tap',[['toOtherLogin',['$0'],[[['providerList','',index]]]]]]]}}" bindtap="__e" class="data-v-42112df8"></image></block></block></view>

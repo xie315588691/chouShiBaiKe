@@ -10,5 +10,7 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "other-login": "/common/common/other-login"
+  }
 }

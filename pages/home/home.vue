@@ -2,18 +2,14 @@
 	<view class="home">
 		<template v-if="!islogin">
 			<view class="home-title">欢迎登录糗事百科,体验更多功能</view>
-			<view class="home-login">
-				<image src="../../static/weixin.png" lazy-load />
-				<image class="home-login-img" src="../../static/qqhy.png" lazy-load />
-				<image src="../../static/weibo.png" lazy-load />
-			</view>
-			<view class="home-login-text">
+			<other-login :providerList="providerList"></other-login>
+			<view class="home-login-text" @tap="toLogin">
 				账号密码登录
 				<text class="iconfont icon-you"></text>
 			</view>
 		</template>
 		<template v-else>
-			<view class="home-islogin">
+			<view class="home-islogin" @tap="toUserSpace">
 				<view class="home-islogin-l">
 					<image src="../../static/demo/topicpic/9.jpeg" mode="widthFix" lazy-load></image>
 					<view class="home-islogin-info">
@@ -70,10 +66,15 @@
 </template>
 
 <script>
+import otherLogin from '@/common/common/other-login.vue';
 export default {
+	components:{
+		otherLogin
+	},
 	data() {
 		return {
 			islogin: true,
+			providerList:this.$store.state.providerList,
 			homeList:[
 				{
 					text:'',
@@ -89,7 +90,18 @@ export default {
 			})
 		}
 	},
-	methods: {}
+	methods: {
+		toLogin(){
+			uni.navigateTo({
+				url:'../login/login'
+			})
+		},
+		toUserSpace(){
+			uni.navigateTo({
+				url:'../user-space/user-space'
+			})
+		}
+	}
 };
 </script>
 

@@ -1,0 +1,15 @@
+
+view {
+	font-size: 28rpx;
+	line-height: inherit;
+}
+.example-title__after {
+	position: relative;
+	color: #031e3c;
+}
+.content {
+	padding: 30rpx;
+	background: #f9f9f9;
+	color: #666;
+}
+
